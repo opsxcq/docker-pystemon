@@ -15,10 +15,10 @@ RUN cd / && \
     cd pystemon && \
     rm -Rf .git
 
-ADD ./monitor.sh /monitor.sh
+COPY main.sh /main.sh
 
 # Pastes folder
 VOLUME /pystemon/pystemon/archive
 VOLUME /pystemon/pystemon/alerts
 
-
+ENTRYPOINT ["/main.sh"]
