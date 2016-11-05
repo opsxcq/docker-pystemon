@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /pystemon
-pyton pystemon.py&
+python pystemon.py&
 
 while true
 do 
