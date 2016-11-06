@@ -13,7 +13,8 @@ RUN apt-get update && \
 RUN cd / && \
     git clone https://github.com/cvandeplas/pystemon && \
     cd pystemon && \
-    rm -Rf .git
+    rm -Rf .git && \
+    sed  -i 's/compress: yes/compress: no/' pystemon.yaml
 
 COPY main.sh /main.sh
 
