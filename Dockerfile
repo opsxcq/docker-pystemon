@@ -11,10 +11,9 @@ RUN apt-get update && \
 
 # Clone pystemon repository
 RUN cd / && \
-    git clone https://github.com/cvandeplas/pystemon && \
+    git clone git@github.com:opsxcq/pystemon.git && \
     cd pystemon && \
-    rm -Rf .git && \
-    sed  -i 's/compress: yes/compress: no/' pystemon.yaml
+    rm -Rf .git
 
 COPY main.sh /main.sh
 
