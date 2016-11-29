@@ -15,6 +15,8 @@ RUN cd / && \
     cd pystemon && \
     rm -Rf .git
 
+RUN exit -1
+
 COPY main.sh /main.sh
 
 # All Pastes 
