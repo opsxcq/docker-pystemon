@@ -5,6 +5,7 @@ python pystemon.py&
 
 while true
 do 
+        # Renice for pystemon
         for pid in $(ps -def | grep pyst | awk '{print $2}')
         do 
                 renice -n 20 $pid 2>&1 > /dev/null 
