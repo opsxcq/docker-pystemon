@@ -19,8 +19,6 @@ COPY main.sh /main.sh
 
 # All Pastes 
 VOLUME /pystemon/pystemon/archive
-
-# Just pastes that matched our alerts
 VOLUME /pystemon/pystemon/alerts
 
 ENTRYPOINT ["/main.sh"]
