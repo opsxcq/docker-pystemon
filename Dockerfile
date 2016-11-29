@@ -17,7 +17,7 @@ RUN cd / && \
 
 COPY main.sh /main.sh
 
-# Pastes folder
+# Folder where pastes will be stored 
 VOLUME /pystemon/pystemon/archive
 VOLUME /pystemon/pystemon/alerts
 
