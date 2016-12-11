@@ -23,4 +23,6 @@ VOLUME /pystemon/pystemon/archive
 # Alerts
 VOLUME /pystemon/pystemon/alerts
 
+WORKDIR /pystemon
+
 ENTRYPOINT ["/main.sh"]
