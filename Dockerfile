@@ -11,7 +11,7 @@ RUN apt-get update && \
 
 # Clone pystemon repository
 RUN cd / && \
-    git clone https://github.com/opsxcq/pystemon && \
+    git clone https://github.com/opsxcq/docker-pystemon pystemon && \
     cd pystemon && \
     rm -Rf .git
 
